@@ -13,7 +13,11 @@ class List extends Component {
         const {listData} = this.props;
 
         const listItems = listData.map((item, index) => {
-            return <li className="collection-item" key={index}>{item.title}</li>
+            return (
+                <li className="collection-item" key={index}>
+                    <Link to={`/item/${item._id}`}>{item.title}</Link>
+                </li>
+            )
         });
 
         return (
