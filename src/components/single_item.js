@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {getSingleItem} from '../actions';
+import {getSingleItem, toggleItemComplete} from '../actions';
 import {Link} from 'react-router-dom';
 
 class SingleItem extends Component {
@@ -10,10 +10,14 @@ class SingleItem extends Component {
         this.props.getSingleItem(this.props.match.params.id);
     }
 
+    handleToggleComplete() {
+        this.props.toggleItemComplete(this.props.match.params.id);
+    }
+
     render() {
         console.log('Single Props:', this.props);
 
-        const {title, details} = this.props.item;
+        const {title, details, complete} = this.props.item;
         //const time = new Date(this.props.item.created);
 
         return (
@@ -24,6 +28,12 @@ class SingleItem extends Component {
                 </div>
                 <h4>{title}</h4>
                 <p>{details}</p>
+                <p>Item is {complete ? 'completed': 'incomplete'}</p>
+                <button
+                    onClick={this.handleToggleComplete.bind(this)}
+                    className={`btn ${complete ? 'yellow': 'green'}`}>
+                    {complete ? 'Make Incomplete': 'Complete Item'}
+                </button>
             </div>
         )
     }
@@ -35,4 +45,7 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, {getSingleItem: getSingleItem})(SingleItem);
+export default connect(mapStateToProps, {
+    getSingleItem: getSingleItem,
+    toggleItemComplete: toggleItemComplete
+})(SingleItem);
