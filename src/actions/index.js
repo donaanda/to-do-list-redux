@@ -32,6 +32,15 @@ export function getSingleItem(id) {
     }
 }
 
+export function toggleItemComplete(id) {
+    const response = axios.put(`${BASE_URL}/todos/${id + API_KEY}`);
+
+    return {
+        type: types.TOGGLE_COMPLETE,
+        payload: response
+    }
+}
+
 // To toggle complete of an item:
 // axios.put(`${BASE_URL}/todos/${id + API_KEY}`);
 
