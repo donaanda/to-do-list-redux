@@ -15,9 +15,11 @@
     "url": "https://github.com/donaanda/to-do-list-redux.git"
   },
   "dependencies": {
+    "acorn": "^6.1.1",
+    "ajv": "^6.10.0",
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
-    "materialize-css": "^0.100.2",
+    "materialize-css": "^1.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
@@ -27,23 +29,23 @@
     "redux-promise": "^0.6.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-syntax-async-functions": "^6.13.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "css-loader": "^0.28.10",
+    "css-loader": "^2.1.1",
     "eslint": "^4.18.2",
     "file-loader": "^1.1.11",
-    "image-webpack-loader": "^4.2.0",
+    "image-webpack-loader": "^4.6.0",
     "postcss-loader": "^2.1.1",
     "react-hot-loader": "^4.0.0",
     "style-loader": "^0.20.3",
     "uglifyjs-webpack-plugin": "^1.2.3",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.12",
-    "webpack-dev-server": "^3.1.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1",
     "webpack-merge": "^4.1.2"
   }
 }
