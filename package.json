@@ -15,7 +15,7 @@
     "url": "https://github.com/donaanda/to-do-list-redux.git"
   },
   "dependencies": {
-    "acorn": "^6.1.1",
+    "acorn": "^6.4.0",
     "ajv": "^6.10.2",
     "axios": "^0.18.1",
     "babel-polyfill": "^6.26.0",
