@@ -40,7 +40,7 @@
     "file-loader": "^5.0.2",
     "image-webpack-loader": "^4.6.0",
     "postcss-loader": "^2.1.1",
-    "react-hot-loader": "^4.0.0",
+    "react-hot-loader": "^4.12.16",
     "style-loader": "^0.20.3",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.32.2",
